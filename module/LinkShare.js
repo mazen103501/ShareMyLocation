@@ -8,7 +8,7 @@ export default class LinkShare {
   }
   shareFunc() {
     let url = encodeURI(
-      `${location.origin}/sharedlinkespage.html?lat=${this.lat}&lng=${this.lng}`
+      `${location.origin}/ShareMyLocation/sharedlinkespage.html?lat=${this.lat}&lng=${this.lng}`
     );
     // console.log(url);
     this.copyBtn.disabled = false;
