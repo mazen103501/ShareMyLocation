@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css" type="text/css">
+    <style>
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <title>Share my location</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="App.js" defer type="module"></script>
+  </head>
+  <body>
+    <!-- <header>
+      <h1>Get or share your loction</h1>
+    </header> -->
+    <section>
+      <div class="map-cont">
+        <div id="map"></div>
+      </div>
+      <div class="the-content">
+        <button class="get-location-btn">Get My Current Location</button>
+        <form>
+          <input type="text" placeholder="Search for address" class="search-input">
+          <button>Search for Address</button>
+        </form>
+        <div class="share">
+          <button class="share-location-btn disabled" disabled>Copy Link</button>
+          <input type="text" readonly placeholder="Shared Link">
+          <!-- <a href="./sharedlinkespage.html">
+            <button>Shared Linkes Page</button>
+          </a> -->
+        </div>
+      </div>
+    </section>
+
+
+    <div class="loading-cont hidden">
+      <div class="loading">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </body>
+</html>
